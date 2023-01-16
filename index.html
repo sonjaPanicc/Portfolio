@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaq.css">
+</head>
+
+<body>
+
+    <nav id="mainmenu">
+        <h3 class="logo">
+            <span>Sonja Panic</span>
+        </h3>
+        <div class="nav">
+            <label for="toggle" class="show-menu-btn">&#9776;</label>
+            <input type="checkbox" id="toggle" />
+            <div class="menu">
+                <a href="#about">About</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#contact-section">Contact</a>
+                <label for="toggle" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about">
+        <div class="about-content">
+            <h1>Front-End developer</h1>
+            <div class="about-info">
+                <p>Hi! Nice to see you stumbled upon my portfolio.<br>
+                    My name is Sonja Panic, and I'm a 34 year
+                    young (yes, young :) ) Front End developer based in Belgrade.<br>
+                    I have a Masters in Civil Engineering, but decided to go after something I've always wanted to
+                    do - programming.<br>
+                    <button class="btn-cv">Read my CV</button>
+                </p>
+                <div class="about-columns">
+                    <div class="uni">
+                        <p>University of Civil Engineering</p>
+                        <div class="square"></div>
+                    </div>
+                    <div class="work">
+                        <p>BIM Manager/<br>Financial supervision during construction</p>
+                        <div class="square"></div>
+                    </div>
+                    <div class="dev">
+                        <p>Front-End developer</p>
+                        <div class="square"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <div id="projects"></div>
+        <div id="modal">
+            <div class="modal-content">
+                <button class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="btn-previous">
+                    < </button>
+                        <button class="btn-next"> > </button>
+                        <div class="slide-modal"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div id="skills"></div>
+        <div class="loading">
+            <div class="loader"></div>
+            <span>And loading . . .</span>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="contact-form">
+            <h2>Contact</h2>
+            <p>Feel free to use the form below to contact me</p>
+            <form>
+                <div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+                    </div>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+                    </div>
+                    <input type="submit" value="Send" class="btn-submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Or follow me on socials</p>
+        <div class="social-network">
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/js.js"></script>
+</body>
+
+</html>
